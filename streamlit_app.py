@@ -26,14 +26,7 @@ storage_options = {"User-Agent": "Mozilla/5.0"}
 url = SERVERS[server]
 
 df = pd.read_csv(url, storage_options=storage_options)
-# convert Datetime to datetime
 df["Datetime"] = pd.to_datetime(df["Datetime"])
-# set Datetime as index
 df.set_index("Datetime", inplace=True)
-
-# print(df.head())
-
-# plot the dataframe as a bar chart
-# df.plot(y="Active Users")
 
 st.bar_chart(df, y="Active Users")
