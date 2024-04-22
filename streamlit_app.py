@@ -4,15 +4,18 @@ import pandas as pd
 
 # %%
 
+st.set_page_config(page_title="Discord Online Counts", page_icon=":bar_chart:")
+
+st.title("Online members of KTH Computer Science Discord servers")
+
 st.write("""
-# Online Status
-This app shows the online status of the KTH Computer Science students.
-Data is collected from the [KTH Computer Science Discord server](https://discord.gg/datasektionen) and Discord server of the [KTH Computer Science students](https://discord.gg/8zStbfHdaF).
+This app shows the online member count of the KTH Computer Science Discord servers.
+Data is collected from the [Konglig Datasektionen](https://discord.gg/datasektionen) and [Datateknik 2021](https://discord.gg/8zStbfHdaF) Discord servers.
 """)
 
 SERVERS = {
     "Konglig Datasektionen": "https://onlinestatus.elias1233.se/Konglig_Datasektionen_datasektionen.csv",
-    "Datateknik 2021": "https://onlinestatus.elias1233.se/Datateknik_2021_8zStbfHdaF.csv"
+    "Datateknik 2021": "https://onlinestatus.elias1233.se/Datateknik_2021_8zStbfHdaF.csv",
 }
 
 server = st.selectbox("Select server", SERVERS.keys())
