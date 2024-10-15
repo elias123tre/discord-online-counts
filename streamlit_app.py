@@ -14,7 +14,7 @@ Data is collected from the [Konglig Datasektionen](https://discord.gg/datasektio
 """)
 
 SERVERS = {
-    "Konglig Datasektionen": "https://onlinestatus.elias1233.se/Konglig_Datasektionen_datasektionen.csv",
+    "Konglig Datasektionen": "https://onlinestatus.elias1233.se/Konglig_Datasektionen_mGwN8HbJaK.csv",
     "Datateknik 2021": "https://onlinestatus.elias1233.se/Datateknik_2021_8zStbfHdaF.csv",
 }
 
